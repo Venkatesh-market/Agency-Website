@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Learn about VR NeXGen Digital - Your trusted SaaS marketing partner. Discover our story, mission, and values.">
+    <title>About Us - VR NeXGen Digital</title>
+    
+    <!-- Open Graph Tags -->
+    <meta property="og:title" content="About VR NeXGen Digital - SaaS Marketing Experts">
+    <meta property="og:description" content="Learn about our passionate team of SaaS marketing experts and our mission to help businesses thrive.">
+    <meta property="og:image" content="images/About Us.jpg">
+    <meta property="og:url" content="https://vrnexgendigital.com/about">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <style>
+        /* About Page Specific Styles */
+        .about-hero {
+            height: 60vh;
+            background-image: url('images/About Us.jpg');
+            background-size: cover;
+            background-position: center;
+            position: relative;
+            margin-top: var(--header-height);
+            display: flex;
+            align-items: center;
+            text-align: center;
+            color: white;
+        }
+
+        .about-hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.6);
+        }
+
+        .story {
+            padding: var(--section-padding) 0;
+        }
+
+        .story__content {
+            max-width: 800px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .mission {
+            padding: var(--section-padding) 0;
+            background-color: #f1f5f9;
+        }
+
+        .values__grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+
+        .value__card {
+            background: white;
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
+
+        .value__card:hover {
+            transform: translateY(-10px);
+        }
+
+        .value__card i {
+            font-size: 2.5rem;
+            color: var(--color-primary);
+            margin-bottom: 1rem;
+        }
+
+        .analytics {
+            padding: var(--section-padding) 0;
+            background-image: url('images/Analytics.jpeg');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            position: relative;
+            color: white;
+        }
+
+        .analytics::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.7);
+        }
+
+        .analytics__content {
+            position: relative;
+            z-index: 1;
+            text-align: center;
+        }
+
+        .progress-bar {
+            width: 100%;
+            height: 20px;
+            background-color: rgba(255, 255, 255, 0.2);
+            border-radius: 10px;
+            margin: 1rem 0;
+            overflow: hidden;
+        }
+
+        .progress-bar__fill {
+            height: 100%;
+            background-color: var(--color-secondary);
+            transform: scaleX(0);
+            transform-origin: left;
+            transition: transform 1s ease;
+        }
+
+        @media screen and (max-width: 768px) {
+            .about-hero {
+                height: 40vh;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <nav class="nav">
+                <a href="index.html" class="nav__logo">
+                    <img src="images/VR NeXGen Logo.png" alt="VR NeXGen Digital Logo" class="nav__logo-img">
+                </a>
+                <div class="nav__menu" id="navMenu">
+                    <ul class="nav__list">
+                        <li class="nav__item"><a href="index.html" class="nav__link">Home</a></li>
+                        <li class="nav__item"><a href="about.html" class="nav__link active">About</a></li>
+                        <li class="nav__item"><a href="services.html" class="nav__link">Services</a></li>
+                        <li class="nav__item"><a href="contact.html" class="nav__link">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="nav__toggle" id="navToggle">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- About Hero Section -->
+    <section class="about-hero">
+        <div class="container">
+            <div class="hero__content">
+                <h1 class="hero__title">Our Story</h1>
+                <p class="hero__text">Where Marketing Meets Innovation</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Story Section -->
+    <section class="story">
+        <div class="container">
+            <div class="story__content">
+                <h2 class="section__title">Who We Are</h2>
+                <p>Welcome to VR NexGen Digital, where marketing meets innovation. We are a team of passionate SaaS marketing experts who thrive on helping businesses reach their full potential. In today's fast-moving digital landscape, it's not enough to have a great product—you need a strategy that cuts through the noise.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Mission Section -->
+    <section class="mission">
+        <div class="container">
+            <h2 class="section__title">Our Mission</h2>
+            <div class="story__content">
+                <p>At VR NexGen Digital, our mission is clear: to help SaaS businesses thrive. We believe in long-term partnerships built on trust, innovation, and measurable results.</p>
+            </div>
+            <div class="values__grid">
+                <div class="value__card">
+                    <i class="fas fa-lightbulb"></i>
+                    <h3>Innovation</h3>
+                    <p>Cutting-edge strategies that keep you ahead of the competition</p>
+                </div>
+                <div class="value__card">
+                    <i class="fas fa-shield-alt"></i>
+                    <h3>Integrity</h3>
+                    <p>Honest communication and transparent results</p>
+                </div>
+                <div class="value__card">
+                    <i class="fas fa-chart-line"></i>
+                    <h3>Results-Driven</h3>
+                    <p>Data-powered strategies for measurable growth</p>
+                </div>
+                <div class="value__card">
+                    <i class="fas fa-hands-helping"></i>
+                    <h3>Collaboration</h3>
+                    <p>True partnership approach with our clients</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Analytics Section -->
+    <section class="analytics">
+        <div class="container">
+            <div class="analytics__content">
+                <h2 class="section__title">Our Impact</h2>
+                <div class="progress-bars">
+                    <h3>Client Satisfaction Rate</h3>
+                    <div class="progress-bar">
+                        <div class="progress-bar__fill" style="transform: scaleX(0.95);"></div>
+                    </div>
+                    <h3>Average ROI Improvement</h3>
+                    <div class="progress-bar">
+                        <div class="progress-bar__fill" style="transform: scaleX(0.85);"></div>
+                    </div>
+                    <h3>Client Retention Rate</h3>
+                    <div class="progress-bar">
+                        <div class="progress-bar__fill" style="transform: scaleX(0.90);"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__grid">
+                <div class="footer__info">
+                    <img src="images/VR NeXGen Logo.png" alt="VR NeXGen Digital Logo" class="footer__logo">
+                    <p>Empowering SaaS businesses with innovative digital marketing solutions.</p>
+                </div>
+                <div class="footer__links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer__contact">
+                    <h4>Contact Us</h4>
+                    <p><i class="fas fa-envelope"></i> venkatesh2095@gmail.com</p>
+                    <p><i class="fas fa-phone"></i> 7339690537</p>
+                    <p><i class="fas fa-map-marker-alt"></i> No-13/37, Mylaudy, Kanyakumari District, TamilNadu, India</p>
+                </div>
+                <div class="footer__social">
+                    <h4>Follow Us</h4>
+                    <div class="social__links">
+                        <a href="#" class="social__link"><i class="fab fa-facebook"></i></a>
+                        <a href="#" class="social__link"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social__link"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" class="social__link"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__bottom">
+                <p>&copy; 2023 VR NeXGen Digital. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Button -->
+    <a href="https://wa.me/7339690537" class="whatsapp-btn" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" id="backToTop">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- JavaScript -->
+    <script src="js/script.js"></script>
+</body>
+</html>

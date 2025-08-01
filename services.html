@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- Previous head and style sections remain unchanged -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore our comprehensive SaaS marketing services including SEO, Social Media Marketing, PPC, and Marketing Automation.">
+    <title>Services - VR NeXGen Digital</title>
+    
+    <!-- Open Graph Tags -->
+    <meta property="og:title" content="Marketing Services - VR NeXGen Digital">
+    <meta property="og:description" content="Comprehensive digital marketing services tailored for SaaS businesses.">
+    <meta property="og:image" content="images/SEO Services.jpg">
+    <meta property="og:url" content="https://vrnexgendigital.com/services">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <style>
+        .service-card {
+            background: white;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            margin-bottom: 2rem;
+            opacity: 0;
+            transform: translateY(20px);
+            transition: all 0.5s ease;
+        }
+
+        .service-card.animate {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .service-card__image {
+            position: relative;
+            overflow: hidden;
+            height: 250px;
+        }
+
+        .service-card__image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.5s ease;
+        }
+
+        .service-card:hover .service-card__image img {
+            transform: scale(1.1);
+        }
+
+        .service-card__content {
+            padding: 2rem;
+        }
+
+        .service-card__icon {
+            font-size: 2.5rem;
+            color: var(--color-primary);
+            margin-bottom: 1rem;
+            animation: rotate 10s linear infinite;
+        }
+
+        .service-card__title {
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+            color: var(--color-primary);
+        }
+
+        .service-card__description {
+            margin-bottom: 1.5rem;
+            color: var(--color-text);
+        }
+
+        .service-card__features {
+            list-style: none;
+        }
+
+        .service-card__features li {
+            margin-bottom: 0.5rem;
+            display: flex;
+            align-items: center;
+        }
+
+        .service-card__features li i {
+            color: var(--color-accent);
+            margin-right: 0.5rem;
+        }
+
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            padding: 2rem 0;
+        }
+
+        @keyframes rotate {
+            from {
+                transform: rotate(0deg);
+            }
+            to {
+                transform: rotate(360deg);
+            }
+        }
+
+        @media screen and (max-width: 768px) {
+            .services-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <nav class="nav">
+                <a href="index.html" class="nav__logo">
+                    <img src="images/VR NeXGen Logo.png" alt="VR NeXGen Digital Logo" class="nav__logo-img">
+                </a>
+                <div class="nav__menu" id="navMenu">
+                    <ul class="nav__list">
+                        <li class="nav__item"><a href="index.html" class="nav__link">Home</a></li>
+                        <li class="nav__item"><a href="about.html" class="nav__link">About</a></li>
+                        <li class="nav__item"><a href="services.html" class="nav__link active">Services</a></li>
+                        <li class="nav__item"><a href="contact.html" class="nav__link">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="nav__toggle" id="navToggle">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Services Section -->
+    <section class="services" style="margin-top: var(--header-height);">
+        <div class="container">
+            <h1 class="section__title">Our Services</h1>
+            <div class="services-grid">
+                <!-- Social Media Marketing -->
+                <div class="service-card">
+                    <div class="service-card__image">
+                        <img src="images/Social Media.avif" alt="Social Media Marketing">
+                    </div>
+                    <div class="service-card__content">
+                        <i class="fas fa-share-alt service-card__icon"></i>
+                        <h2 class="service-card__title">Social Media Marketing</h2>
+                        <p class="service-card__description">Grow your brand presence and engage your audience across platforms with tailored content and proven growth strategies.</p>
+                        <ul class="service-card__features">
+                            <li><i class="fas fa-check"></i> Content Strategy Development</li>
+                            <li><i class="fas fa-check"></i> Community Management</li>
+                            <li><i class="fas fa-check"></i> Social Media Analytics</li>
+                            <li><i class="fas fa-check"></i> Engagement Optimization</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Facebook Ads -->
+                <div class="service-card">
+                    <div class="service-card__image">
+                        <img src="images/FB Ads.png" alt="Facebook Advertising">
+                    </div>
+                    <div class="service-card__content">
+                        <i class="fab fa-facebook service-card__icon"></i>
+                        <h2 class="service-card__title">Facebook Ads</h2>
+                        <p class="service-card__description">Drive targeted traffic, generate leads, and increase sales with high-converting Facebook ad campaigns.</p>
+                        <ul class="service-card__features">
+                            <li><i class="fas fa-check"></i> Custom Audience Targeting</li>
+                            <li><i class="fas fa-check"></i> Ad Creative Design</li>
+                            <li><i class="fas fa-check"></i> Campaign Optimization</li>
+                            <li><i class="fas fa-check"></i> Performance Tracking</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Instagram Ads -->
+                <div class="service-card">
+                    <div class="service-card__image">
+                        <img src="images/Insta Ads.jpg" alt="Instagram Advertising">
+                    </div>
+                    <div class="service-card__content">
+                        <i class="fab fa-instagram service-card__icon"></i>
+                        <h2 class="service-card__title">Instagram Ads</h2>
+                        <p class="service-card__description">Reach and convert your ideal audience with visually compelling ads designed to maximize engagement.</p>
+                        <ul class="service-card__features">
+                            <li><i class="fas fa-check"></i> Visual Content Strategy</li>
+                            <li><i class="fas fa-check"></i> Story Ads Optimization</li>
+                            <li><i class="fas fa-check"></i> Influencer Partnerships</li>
+                            <li><i class="fas fa-check"></i> Engagement Analytics</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Google Ads -->
+                <div class="service-card">
+                    <div class="service-card__image">
+                        <img src="images/Google Ads.webp" alt="Google Advertising">
+                    </div>
+                    <div class="service-card__content">
+                        <i class="fab fa-google service-card__icon"></i>
+                        <h2 class="service-card__title">Google Ads</h2>
+                        <p class="service-card__description">Maximize ROI with expertly managed campaigns. Appear at top of search results when customers are searching.</p>
+                        <ul class="service-card__features">
+                            <li><i class="fas fa-check"></i> Keyword Research</li>
+                            <li><i class="fas fa-check"></i> Ad Copy Optimization</li>
+                            <li><i class="fas fa-check"></i> Landing Page Design</li>
+                            <li><i class="fas fa-check"></i> Conversion Tracking</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Marketing Automation -->
+                <div class="service-card">
+                    <div class="service-card__image">
+                        <img src="images/Marketing Automation.png" alt="Marketing Automation">
+                    </div>
+                    <div class="service-card__content">
+                        <i class="fas fa-robot service-card__icon"></i>
+                        <h2 class="service-card__title">Marketing Automation</h2>
+                        <p class="service-card__description">Streamline marketing with intelligent automation tools that nurture leads 24/7.</p>
+                        <ul class="service-card__features">
+                            <li><i class="fas fa-check"></i> Email Automation</li>
+                            <li><i class="fas fa-check"></i> Lead Scoring</li>
+                            <li><i class="fas fa-check"></i> Workflow Automation</li>
+                            <li><i class="fas fa-check"></i> Analytics & Reporting</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__grid">
+                <div class="footer__info">
+                    <img src="images/VR NeXGen Logo.png" alt="VR NeXGen Digital Logo" class="footer__logo">
+                    <p>Empowering SaaS businesses with innovative digital marketing solutions.</p>
+                </div>
+                <div class="footer__links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer__contact">
+                    <h4>Contact Us</h4>
+                    <p><i class="fas fa-envelope"></i> venkatesh2095@gmail.com</p>
+                    <p><i class="fas fa-phone"></i> 7339690537</p>
+                    <p><i class="fas fa-map-marker-alt"></i> No-13/37, Mylaudy, Kanyakumari District, TamilNadu, India</p>
+                </div>
+                <div class="footer__social">
+                    <h4>Follow Us</h4>
+                    <div class="social__links">
+                        <a href="#" class="social__link"><i class="fab fa-facebook"></i></a>
+                        <a href="#" class="social__link"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social__link"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" class="social__link"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__bottom">
+                <p>&copy; 2023 VR NeXGen Digital. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Button -->
+    <a href="https://wa.me/7339690537" class="whatsapp-btn" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" id="backToTop">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- JavaScript -->
+    <script src="js/script.js"></script>
+    <script>
+        // Initialize service card animations
+        document.addEventListener('DOMContentLoaded', () => {
+            const serviceCardObserver = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('animate');
+                    }
+                });
+            }, { threshold: 0.1 });
+
+            document.querySelectorAll('.service-card').forEach(card => {
+                serviceCardObserver.observe(card);
+            });
+        });
+    </script>
+</body>
+</html>
